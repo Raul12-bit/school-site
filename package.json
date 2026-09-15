@@ -1,0 +1,38 @@
+{
+  "name": "alata-u-school-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node --watch server/index.mjs\" \"vite\"",
+    "dev:client": "vite",
+    "dev:server": "node --watch server/index.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "node server/index.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "bcryptjs": "latest",
+    "concurrently": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "multer": "latest",
+    "react-router-dom": "latest",
+    "sql.js": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/express": "latest",
+    "@types/jsonwebtoken": "latest",
+    "@types/multer": "latest",
+    "@types/sql.js": "latest"
+  }
+}
